@@ -1,0 +1,16 @@
+<resources>
+    <color name="rub_maroon">#7A1F2B</color>
+    <color name="rub_cream">#F7F1E4</color>
+    <color name="rub_ink">#2C1D1F</color>
+    <color name="rub_muted">#786C68</color>
+    <color name="rub_gold">#C88A2C</color>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">@color/rub_maroon</item>
+        <item name="android:statusBarColor">@color/rub_cream</item>
+        <item name="android:navigationBarColor">@color/rub_cream</item>
+
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@color/rub_cream</item>
+    </style>
+</resources>

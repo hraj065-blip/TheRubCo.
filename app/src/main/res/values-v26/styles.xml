@@ -1,0 +1,11 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">@color/rub_maroon</item>
+        <item name="android:statusBarColor">@color/rub_cream</item>
+        <item name="android:navigationBarColor">@color/rub_cream</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@color/rub_cream</item>
+    </style>
+</resources>
