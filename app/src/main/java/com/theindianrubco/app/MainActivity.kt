@@ -89,8 +89,8 @@ class MainActivity : Activity() {
             CookieManager.getInstance().setAcceptCookie(true)
             webChromeClient = object : WebChromeClient() {
                 override fun onProgressChanged(view: WebView?, newProgress: Int) {
-                    progress.progress = newProgress
-                    progress.visibility = if (newProgress in 1..99 && hasPageLoaded) View.VISIBLE else View.GONE
+                    this@MainActivity.progress.progress = newProgress
+                    this@MainActivity.progress.visibility = if (newProgress in 1..99 && hasPageLoaded) View.VISIBLE else View.GONE
                 }
             }
             webViewClient = object : WebViewClient() {
@@ -122,7 +122,7 @@ class MainActivity : Activity() {
                     mainHandler.removeCallbacks(loadTimeout)
                     splash.visibility = View.GONE
                     errorPanel.visibility = View.GONE
-                    progress.visibility = View.GONE
+                    this@MainActivity.progress.visibility = View.GONE
                 }
 
                 override fun onReceivedError(view: WebView?, request: WebResourceRequest?, error: WebResourceError?) {
@@ -325,3 +325,4 @@ class MainActivity : Activity() {
     }
 
 }
+
